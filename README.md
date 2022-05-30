@@ -1,1 +1,1 @@
-# Projet-7-credit-score-application
+# Projet-7-Implementez-un-modele-de-scoring
