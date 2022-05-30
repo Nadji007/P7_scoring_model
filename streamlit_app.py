@@ -14,8 +14,8 @@ def load_data(path):
     return data
 
 
-readable_data_preprocessed = load_data('readable_data_preprocessed.csv')
-data_final = load_data('data_final.csv')
+readable_data_preprocessed = load_data('data/outputs/readable_data_preprocessed.csv')
+data_final = load_data('data/outputs/data_final.csv')
 
 added_columns = ['NAME_CONTRACT_TYPE', 'APPROVED_APP_CREDIT_PERC_MEAN', 'NAME_FAMILY_STATUS', 'NAME_EDUCATION_TYPE',
                  'OCCUPATION_TYPE', 'ORGANIZATION_TYPE', 'NAME_HOUSING_TYPE', 'FLAG_OWN_CAR']
@@ -183,4 +183,4 @@ if st.button('Generate Score Explanation'):
 
 st.write('________________________________________________')
 st.subheader('Overall Most Important Criterias')
-st.image('lgbm_importances01.png')
+st.image('data/outputs/lgbm_importances01.png')
